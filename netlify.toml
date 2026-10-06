@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = ".output/public"
+
+[build.environment]
+  NITRO_PRESET = "netlify"
+
+# Make sure all dynamic routes are handled properly
+[[redirects]]
+  from = "/*"
+  to = "/.netlify/functions/server"
+  status = 200
+  force = true
