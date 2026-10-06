@@ -4,6 +4,7 @@
 
 [build.environment]
   NITRO_PRESET = "netlify"
+  SECRETS_SCAN_OMIT_KEYS = "FROM_EMAIL,ADMIN_EMAIL,GMAIL_USER"
 
 # Make sure all dynamic routes are handled properly
 [[redirects]]
